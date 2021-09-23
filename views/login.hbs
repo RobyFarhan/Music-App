@@ -1,0 +1,39 @@
+{{>header}}
+
+{{#if message}}
+<div class="alert alert-{{message.type}}" role="alert">
+    {{message.message}}
+</div>
+{{/if}}
+
+{{>navbar}}
+
+{{id}}
+
+<div class="container pt-4 mt-5 login-box ">
+<form action="/login" method="POST">
+
+    <div class="row login">
+        <div class="col-2"></div>
+        <div class="col-8 login-input mb-3">
+            <input type="text" name="email" class="login-username" placeholder="Email" value="rob@gmail.com">
+        </div>
+        <div class="col-2"></div>
+
+        <div class="col-2"></div>
+        <div class="col-8 login-input mb-3">
+            <input type="password" name="password" class="login-password" placeholder="Password" value="roby">
+        </div>
+        <div class="col-2"></div>
+
+        <div class="col-3"></div>
+        <div class="col-6">
+            <button class="btn-login">Login</button>
+        </div>
+        <div class="col-3"></div>
+
+
+
+    </div>
+    </form>
+</div>

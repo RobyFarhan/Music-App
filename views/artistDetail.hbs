@@ -1,0 +1,46 @@
+{{>header}}
+{{>navbar}}
+
+<div class="container mb-5 px-5">
+
+    {{#if isLogin}}
+    {{!-- {{#if isContentOwner}} --}} {{#each artistDetail}}
+    <div class="text-end group-btn">
+        <a href="/edit-artist/{{this.id}}">
+        <button type="button" class="btn btn-warning">Edit </button>
+        </a>
+         <a href="/delete-artist/{{this.id}}">
+        <button type="button" class="btn btn-danger">Delete</button>
+        </a> 
+        <a href="/song-list/{{this.id}}">
+            <button type="button" class="btn btn-primary">Daftar Lagu {{this.name}} </button>
+        </a>
+    </div>
+       {{/each}}
+        {{/if}}
+
+    <div class="artistDetail-point">
+    {{#each artistDetail}}
+    <img src=" {{this.image}}" alt="artist-photo" class="thumbnail-artist-detail">
+    <div class="detail-name mt-2 detail-obj">
+    {{this.name}}
+    </div>
+    <div class="detail-start-career mt-2 detail-obj">
+       Memulai karirnya pada {{this.start_career}}
+    </div>
+    <div class="detail-about detail-obj">
+        {{this.about}}
+    </div>
+    {{/each}}
+    </div>
+
+ </div>
+
+{{!-- <script> --}}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+
+</script>
+
+{{>footer}}

@@ -1,0 +1,34 @@
+{{>header}}
+{{>navbar}}
+
+{{!-- LAGU PLAYING BERDASARKAN ID --}}
+
+<div class="container song-list">
+    {{#each songChosen}}
+    <div class='row mt-3'>
+        <div class='col-3 music-player mt-3'>
+            {{!-- untuk mengarahkan ke halaman berikutnya --}}
+            <a href="/playing/{{this.id}}"> 
+            {{!-- ----- --}}
+            <div class='title-music'>
+             <img src="/uploads/music.png" class="music-logo">{{this.title}}
+            </div>
+            </a>
+            <a href="/edit-music/{{this.id}}">
+                <button type="button" class="btn btn-warning">Edit </button>
+            </a>
+            <a href="/delete-music/{{this.id}}">
+                <button type="button" class="btn btn-danger">Delete</button>
+            </a>
+        </div>
+    </div>
+    {{/each}}
+</div>
+
+<script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+
+</script>
+

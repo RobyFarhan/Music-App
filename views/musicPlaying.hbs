@@ -1,0 +1,31 @@
+{{>header}}
+{{>navbar}}
+
+<div class="container music-playing">
+<div class='row mt-3'>
+    {{#each musics}}
+    <div class='col-3 musicPlayer mt-3'>
+        {{!-- <a href="/artistDetail/{{this.id}}"> --}}
+            <img src='{{this.cover_music}}' alt='' class='list-thumbnail' />
+            <div class='title-music'>
+                {{this.title}}
+            </div>
+            <div class='music-itself'>
+                <audio controls>
+                <source src='{{this.music}}' type="audio/mpeg">
+                </audio>
+            </div>
+        {{!-- </a> --}}
+    </div>
+    {{/each}}
+</div>
+</div>
+
+<script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+
+</script>
+
+{{>footer}}

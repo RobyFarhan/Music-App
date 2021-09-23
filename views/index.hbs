@@ -1,0 +1,74 @@
+{{>header}}
+{{>navbar}}
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=MonteCarlo&display=swap" rel="stylesheet">
+
+<div class="col-md-12 col-md-offset-2 carousel">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src='https://images.wallpaperscraft.com/image/electric_guitar_guitar_guitarist_169662_2560x1440.jpg' class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.wallpaperscraft.com/image/concert_party_performance_138075_2560x1440.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.wallpaperscraft.com/image/headphones_camera_retro_122094_2560x1440.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    </div>
+
+<div class="container artist-list">
+    <div class='row mt-3'>
+        {{#each artist}}
+        <div class='col-3 artist-pict'>
+        <a href="/artistDetail/{{this.id}}">
+            <img src='{{this.image}}' alt='' class='list-thumbnail' />
+            <div class='list-text-title-content'>
+                {{this.name}}
+            </div>
+            </a>
+        </div>
+        {{/each}}
+    </div>
+</div>
+
+
+
+{{!-- <div class="container music-list">
+    <div class='row mt-3'>
+        {{#each musics}}
+        <div class='col-3 artist-pict'>
+            <a href="/music/{{musics.id}}">
+            <div class='list-text-title-content'>
+                {{musics.title}}
+            </div>
+                <img src='{{musics.cover_music}}' alt='' class='list-thumbnail' />    
+            </a>
+        </div>
+        {{/each}}
+    </div>
+</div> --}}
+
+    {{>footer}}

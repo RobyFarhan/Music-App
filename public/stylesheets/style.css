@@ -1,0 +1,298 @@
+body {
+  background-color: #353535;
+}
+
+.nav-item .btn-login {
+  color: white;
+}
+
+.navbar-brand {
+  font-family: "Urbanist", sans-serif;
+}
+
+.login input {
+  /* border-radius: 5px; */
+  padding: 5px;
+  width: 250px;
+}
+
+.img-login {
+  width: 30px;
+}
+
+.btn-login {
+  background-color: #5c0099;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #fdfeee;
+  width: 80px;
+  padding: 3px;
+  font-family: "Urbanist", sans-serif;
+}
+
+.btn-login:hover {
+  background-color: #7b2cbf;
+}
+
+.register {
+  background-color: #212529;
+  width: 30%;
+  /* padding-left: 15px; */
+}
+
+.btn-register {
+  background-color: #fdc500;
+  border-radius: 5px;
+  color: #353535;
+  text-decoration: none;
+  padding: 5px;
+  font-weight: bold;
+  width: 100px;
+}
+
+.register-input input {
+  width: 300px;
+  border-radius: 3px;
+  padding: 5px;
+}
+
+.nav-item a {
+  font-family: "Urbanist", sans-serif;
+  font-weight: bold;
+}
+#col1 {
+  background-color: yellow;
+}
+#col2 {
+  background-color: green;
+}
+#col3 {
+  background-color: orange;
+}
+
+.container {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.container a {
+  text-decoration: none;
+  color: black;
+}
+.col-2 img {
+  width: 100%;
+  height: 150px;
+  padding-top: 5px;
+}
+.text-title {
+  font-family: "Urbanist", sans-serif;
+}
+
+#flexbox {
+  display: flex;
+  justify-content: center;
+}
+
+.thumbnail-artistDetail {
+  height: 400px;
+  width: 80%;
+  /* padding-left: 100px;
+  padding-top: 30px;
+  padding-bottom: 30px; */
+}
+
+.artist-pict img {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(200%);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.artist-pict img:hover {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+  transform: scale(1.5);
+}
+
+#img-artistDetail {
+  background-color: blueviolet;
+  height: 500px;
+  /* width: 50%; */
+}
+
+.artistData {
+  background-color: aquamarine;
+}
+
+.register-name {
+  background-color: brown;
+}
+
+.register-email {
+  background-color: rgb(52, 192, 39);
+}
+
+.register-password {
+  background-color: rgb(209, 45, 187);
+}
+
+.input-name {
+  width: 100%;
+}
+
+.input-email {
+  width: 100%;
+}
+
+.input-password {
+  width: 100%;
+}
+
+.addArtist {
+  background-color: white;
+  width: 50%;
+  border-radius: 5px;
+}
+
+.addArtist .row {
+  background-color: white;
+  margin-bottom: 5px;
+  font-family: "Urbanist", sans-serif;
+  font-weight: bold;
+}
+
+.addArtist .row input {
+  width: 100%;
+  padding: 3px;
+}
+
+.add-artist-name {
+  background-color: #ced4da;
+  border-width: 1px;
+}
+
+.editArtist {
+  background-color: white;
+  width: 60%;
+}
+
+#preview-thumbnail {
+  background-color: blue;
+  padding: 5px;
+}
+
+.btn-submit {
+  font-family: "Urbanist", sans-serif;
+}
+.date-career {
+  background-color: #ced4da;
+  border-width: 1px;
+}
+.about-artist {
+  background-color: #ced4da;
+  border-width: 1px;
+}
+
+.dropdown {
+  margin-right: 50px;
+}
+
+.dropdown-menu a {
+  font-size: 10px;
+}
+
+.login-box {
+  display: flex;
+  justify-content: center;
+  background-color: #212529;
+  width: 30%;
+  height: 30%;
+  /* border-radius: 2px; */
+}
+
+.login-username {
+  width: 50%;
+  padding: 3px;
+}
+
+.login-password {
+  width: 50%;
+  padding: 3px;
+}
+
+.detail-obj {
+  color: white;
+}
+
+.group-btn {
+  display: flex;
+  justify-content: center;
+  background-color: aliceblue;
+  padding: 5px;
+  width: fit-content;
+}
+
+.group-btn button {
+  margin-right: 7px;
+}
+
+.group-btn img {
+  width: 50px;
+}
+
+.artist-pict img {
+  width: 250px;
+  height: 170px;
+  border: 4px solid #ddd;
+}
+
+.artistDetail-point img {
+  width: 250px;
+  margin-top: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+div.artistDetail-point {
+  width: 80%;
+  background-color: #1b263b;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+}
+
+div.container {
+  text-align: center;
+  padding: 10px 20px;
+}
+
+.detail-obj {
+  padding-bottom: 20px;
+}
+.detail-name {
+  /* font-family: "Alex Brush", cursive; */
+  font-size: large;
+  font-weight: bold;
+}
+
+.list-text-title-content {
+  margin-bottom: 10px;
+  font-size: larger;
+  /* font-weight: bold; */
+  color: #f5f3f4;
+  font-family: "MonteCarlo", cursive;
+}
+
+.music-player {
+  background-color: blue;
+}
+
+.music-player .title-music {
+  color: black;
+}
+
+.title-music img {
+  width: 20px;
+  height: 25px;
+  margin-right: 10px;
+}
